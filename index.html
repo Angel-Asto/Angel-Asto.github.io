@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InMemoriOf</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>InMemoriOf</h1></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h2>Preservando los recuerdos para siempre</h2>
+            <p>Con nuestros servicios, puedes mantener viva la memoria de tus seres queridos para siempre.</p>
+            <a href="#empresa" class="btn">Más información</a>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="empresa" class="fade-in section">
+        <div class="container">
+            <h2>Bienvenido a InMemoriOf</h2>
+            <p>En InMemoriOf nos dedicamos a preservar las memorias de tus seres queridos. A través de servicios digitales y personalizados, te ayudamos a mantener vivas sus historias y a transmitirlas a futuras generaciones.</p>
+        </div>
+    </section>
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="fade-in section bg-light">
+        <div class="container">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class="fas fa-memory fa-3x"></i>
+                    <h3>Álbumes Digitales</h3>
+                    <p>Creamos álbumes interactivos para que puedas revivir los momentos más preciados de tus seres queridos.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-video fa-3x"></i>
+                    <h3>Videos Conmemorativos</h3>
+                    <p>Producción de videos conmemorativos que recogen la vida y legado de esa persona especial.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-book-open fa-3x"></i>
+                    <h3>Libros de Recuerdos</h3>
+                    <p>Personalizamos libros físicos y digitales que recopilan los recuerdos más significativos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonios" class="fade-in section">
+        <div class="container">
+            <h2>Testimonios</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <p>"InMemoriOf ha sido una bendición para mi familia. Gracias a su servicio, podemos mantener vivos los recuerdos de nuestra abuela."</p>
+                    <h4>- María López</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"El álbum digital que crearon fue simplemente hermoso. Nos permitió reunir todas las memorias de manera única y emotiva."</p>
+                    <h4>- Juan Pérez</h4>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Los videos conmemorativos son un recuerdo invaluable que siempre llevaré conmigo. InMemoriOf hizo un trabajo espectacular."</p>
+                    <h4>- Ana Martínez</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de galería -->
+    <section id="galeria" class="fade-in section bg-light">
+        <div class="container">
+            <h2>Galería de Memorias</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://placehold.co/300x200" alt="Foto conmemorativa 1"></div>
+                <div class="gallery-item"><img src="https://placehold.co/300x200" alt="Foto conmemorativa 2"></div>
+                <div class="gallery-item"><img src="https://placehold.co/300x200" alt="Foto conmemorativa 3"></div>
+                <div class="gallery-item"><img src="https://placehold.co/300x200" alt="Foto conmemorativa 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="fade-in section">
+        <div class="container">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                <div class="input-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Tu email">
+                </div>
+                <div class="input-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 InMemoriOf. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

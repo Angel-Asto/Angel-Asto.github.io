@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Familiar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería Familiar: Familia Pérez</h1>
+        <p>Bienvenido a nuestra galería de recuerdos más preciados.</p>
+        <button onclick="scrollToGallery()">Ver Galería</button>
+    </header>
+
+    <main>
+        <section id="photos">
+            <h2>Fotos</h2>
+            <div class="gallery">
+                <img src="foto1.jpg" alt="Boda de Juan y María" onclick="openLightbox();currentSlide(1)">
+                <img src="foto2.jpg" alt="Cumpleaños de Ana" onclick="openLightbox();currentSlide(2)">
+                <img src="foto3.jpg" alt="Vacaciones familiares" onclick="openLightbox();currentSlide(3)">
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <div class="video-gallery">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+                <video controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox para agrandar las fotos -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-slide" src="foto1.jpg">
+            <img class="lightbox-slide" src="foto2.jpg">
+            <img class="lightbox-slide" src="foto3.jpg">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <p>Galería privada - Todos los derechos reservados © 2024</p>
+        <a href=".#contacto">Contáctanos</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
